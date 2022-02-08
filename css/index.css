@@ -1,0 +1,406 @@
+/* 轮播图 */
+.lunbo{
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.lunbo .wrapper{
+    height: 500px;
+    background-color: pink;
+    position: relative;
+}
+
+/* 左边界面 */
+.lunbo .left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 251px;
+    height: 500px;
+    background-color: #000000;
+    float: left;
+    opacity: 0.8;
+}
+.lunbo .wrapper .left li{
+    height: 50px;
+    padding: 13px 36px;
+     position: relative;
+}
+.lunbo .wrapper .left li a{
+    color: #ffffff;
+}
+.lunbo .wrapper .left li:hover{
+    background-color: #27ba9b;
+}
+.lunbo .wrapper .left li::after{
+    content: '';
+    top: 25xp;
+    right: 19px;
+
+    width: 6px;
+    height: 11px;
+    background-image: url(../images/sprites.png);
+    position: absolute;
+    background-position: -80px -110px;
+}
+.lunbo .wrapper .left li span{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    margin-left: 15px;
+}
+
+/* 箭头见面设置 */
+.turnleft,.turnright{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    top: 228px;
+    background-color: #000000;
+	opacity: 0.2;
+    background-image: url(../images/sprites.png);
+}
+.turnleft{
+    left: 260px;
+    background-position: 14px -60px;
+}
+.turnright{
+    right: 10px;
+    background-position: -23px -60px;
+}
+/* 圆点样式 */
+.lunbo ol{
+    position: absolute;
+    bottom: 31px;
+    right: 451px;
+}
+.lunbo ol li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.43;
+    margin-left: 17px;
+    background-color:#ffffff;
+    cursor: pointer;
+}
+/* 当前状态 */
+.lunbo ol .current{
+    background-color: green;
+}
+
+
+
+/* 新鲜好物 */
+.good .hd{
+    height: 114px;
+    line-height: 114px;
+}
+.good .hd h2{
+    float: left;
+    font-size: 29px;
+    font-weight: 400;
+    height: 114px;
+}
+.good .hd h2 span{
+    color: #999999;
+    font-size: 16px;
+    margin-left: 34px;
+}
+
+.good .hd a{
+    font-size: 16px;
+    color: #999999;
+    float: right;
+}
+.good .hd a::after{
+    width: 7px;
+    height: 13px;
+    margin-left: 13px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+    vertical-align: middle;
+}
+
+.good .bd li{
+    float: left;
+    width: 304px;
+    height: 405px;
+    background-color: #f0f9f4;
+    margin-right: 8px;
+}
+.good .bd li:last-child{
+    margin-right: 0;
+}
+/* 图片设置 */
+.good .bd li a img{
+    width: 304px;
+    height: 305px;
+}
+/* 文字价格，介绍 */
+.good .bd li a h3{
+    color: #333333;
+    font-size: 20px;
+    margin-left: 69px;
+    margin-top: 22px;
+}
+.good .bd li a p{
+    display:inline-block;
+    color: #9a2e1f;
+    font-size: 23px;
+}
+.good .bd li a span{
+    color: #9a2e1f;
+    font-size: 17px;
+    margin-left: 131px;
+    margin-bottom: 21px;
+}
+
+/* 人气推荐 */
+.hot .hd{
+    height: 114px;
+    line-height: 114px;
+}
+.hot .hd h2{
+    color: #333333;
+    font-size: 29px;
+    font-weight: 400;
+}
+.hot .hd h2 span{
+    color: #999999;
+    font-size: 16px;
+    margin-left: 34px;
+}
+/* 设置li的大小 */
+.hot .bd li{
+    float: left;        
+    margin-right: 8px;
+}
+.hot .bd li:last-child{
+    margin-right: 0;
+}
+.hot .bd li img{
+    width: 304px;
+    height: 305px;
+}
+.hot .bd li p{
+    font-size: 21px;
+    color: #333333;
+    margin-left: 109px;
+    margin-top: 22px;
+}
+.hot .bd li span{
+    font-size: 16px;
+    color: #999999;
+    margin-left: 84px;
+    margin-top: 61px;
+}
+
+/* 热门品牌 */
+.brand{
+    margin-top: 50px;
+    position: relative;
+    height: 500px;
+    background-color: #f5f5f5;
+}
+.brand .wrapper h2{
+    float: left;
+    padding-top: 42px;
+    color: #333333;
+    font-size: 29px;
+    font-weight: 400;
+}          
+.brand .hd h2 span{
+    color: #999999;
+    font-size: 16px;
+    margin-left: 34px;
+}
+/* 右边箭头 */
+.brand .hd .fot{
+    top: 85px;
+    position: relative;
+    float: right;
+    width: 50px;
+    height: 20px;
+}
+.brand .hd .fot .one{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #e2e2e2;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -70px;
+}
+.brand .hd .fot .two{
+    right: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    background-image: url(../images/sprites.png);
+    background-position: -40px -70px;
+}
+/* 图片设置 */
+.brand .bd ul{
+    margin-top: 45px;
+}
+.brand .bd li{
+    float: left;
+    margin-right: 3px;
+}
+.brand .bd li:last-child{
+    margin-right: 0;
+}
+.brand .bd li a img{
+    width: 245px;
+    height: 313px;
+}
+
+
+
+/* 生鲜区 */
+.fish,.cloth{
+    height: 730px;
+}
+.fish .hd,.cloth .hd{
+    height: 90px;
+    line-height: 90px;
+}
+.fish .hd h2,.cloth .hd h2{
+    color: #333333;
+    font-weight: 400;
+    float: left;
+}
+
+/* 查看全部 */
+.fish .hd .more,.cloth .hd .more{
+    font-size: 16px;
+    color: #999999;
+    float: right;
+}
+.fish .hd .more::after,.cloth .hd .more::after{
+    width: 7px;
+    height: 13px;
+    margin-left: 13px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+    vertical-align: middle;
+}
+/* 导航栏 */
+.fish .hd ul,.cloth .hd ul{
+    float: right;
+    margin-right: 65px;
+}
+.fish .hd ul li,.cloth .hd ul li{
+    float: left;
+}
+.fish .hd ul li a,.cloth .hd ul li a{
+    padding: 0 7px;
+
+}
+.fish .hd ul li a:hover,.cloth .hd ul li a:hover{
+    background-color: #27ba9b;
+    color: #ffffff;
+}
+/* 内容区域 */
+.fish .bd .left,.cloth .bd .left{
+    float: left;
+    width: 240px;
+    height: 610px;
+}
+.fish .bd .right,.cloth .bd .right{
+    float: left;
+    width: 1000px;
+    height: 610px;
+}
+.fish .bd .right li,.cloth .bd .right li{
+    position: relative;
+    float: left;
+    width: 242px;
+    height: 304px;
+    margin-left: 8px;
+    padding-top: 8px;
+    padding-left: 29px;
+}
+.fish .bd .right li .place,.cloth .bd .right li .place{
+    position: absolute;
+    display: none;
+    left: 0;
+    bottom: 0;
+    width: 242px;
+    height: 84px;
+    background-color: #27ba9b;
+    transition: all 2s;
+}
+.fish .bd .right li:hover>.place,.cloth .bd .right li:hover>.place{
+    display:block;
+}
+/* place里面的文字 */
+.fish .bd .right li .place .one,.cloth .bd .right li .place .one{
+    width: 125px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 55px;
+    color: #ffffff;
+    margin-top: 14px;
+    border-bottom: 1px solid #a9dbcc;
+}
+.fish .bd .right li .place .two,.cloth .bd .right li .place .two{
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+    width: 100px;
+    height: 15px;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+.fish .bd .right li .place .one::after,.fish .bd .right li .place .two::after,.cloth .bd .right li .place .one::after,.cloth .bd .right li .place .two::after{
+    width: 7px;
+    height: 13px;
+    margin-left: 13px;
+    content: '';
+    display: inline-block;
+    background-image: url(../images/sprites.png);
+    background-position: 0 -110px;
+    vertical-align: middle;
+}
+
+
+.fish .bd .right li:hover,.cloth .bd .right li:hover{
+    border: solid 2px #27ba9b;
+}
+.fish .bd .right li img,.cloth .bd .right li img{
+    width: 184px;
+    height: 184px;
+}
+
+
+/* 文字设置 */
+.fish .bd .right li .big h3,.cloth .bd .right li .big h3{
+    font-size: 16px;
+    color: #333333;
+    margin-top: 12px;
+}
+.fish .bd .right li .big span,.cloth .bd .right li .big span{
+    color: #9a2e1f;
+    font-size: 17px;
+}
+.fish .bd .right li .big p,.cloth .bd .right li .big p{
+    margin-top: 15px;
+    display: inline-block;
+    color: #9a2e1f;
+    font-size: 22px;
+}
+
+/* 服饰 */
+.cloth .bd .left a img{
+    width: 243px;
+    height: 617px;
+}
