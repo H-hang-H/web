@@ -1,0 +1,404 @@
+/* 版心 */
+.wrapper{
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 最上面的板块 */
+.shortcut{
+    height: 52px;
+    background-color: #333;
+}
+.shortcut .wrapper{
+    height: 52px;
+}
+.shortcut .wrapper ul{
+    float: right;
+}
+.shortcut .wrapper ul li{
+    float:left;
+    line-height: 52px;
+    margin-right: 10px;
+}
+.shortcut .wrapper ul li a{
+    border-right: 1px #666666 solid;
+    padding:0 16px;
+    font-size: 14px;
+    color: #dcdcdc;
+}
+.shortcut .wrapper a span{
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    display: inline-block;
+    background-position: -160px -70px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+/* 头部导航 */
+.header{
+    height: 70px;
+    /* background-color: pink; */
+    margin: 30px auto;
+}
+/* logo图片设置 */
+.header .logo .img{
+    float: left;
+    height: 70px;
+    margin-right: 30px;
+}
+/* 导航设置 */
+.header .nav ul li{
+    float: left;
+    margin: 0 24px;
+}
+.header .nav ul li a{
+    line-height: 70px;
+    font-size: 16px;
+    color: #333333;
+}
+.header .nav ul li a:hover{
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+    padding-bottom: 8px;
+}
+/* 搜索框 */
+.header .search{
+    position: relative;
+    margin-left: 58px;
+    float: left;
+    width: 172px;
+    height: 30px;
+    background-color: #ffffff;
+    margin-top: 22px;
+    padding-left: 30px;
+}
+.search::placeholder{
+    font-size: 14px;
+    color: #cccccc;
+}
+.header .search span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -70px;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+.header .search input{
+    width: 130px;
+    border-bottom:2px solid #e7e7e7;
+}
+/* 购物车 */
+.header .car{
+    float: left;
+    position: relative;
+    margin-top: 28px;
+    margin-left: 15px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/sprites.png);
+    background-position: -120px -70px;
+
+}
+.header .car a span{
+    position: absolute;
+    width: 20px;
+	height: 15px;
+	background-color: #e26237;
+	border-radius: 8px;
+    top: -8px;
+    right: -8px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+/* 末尾的版权设置 */
+.ban{
+    height: 340px;
+    background-color: #333333;
+}
+.ban .wrapper{
+    width: 1393px;
+}
+.ban .wrapper .top{
+    height: 180px;
+    border-bottom: 2px solid #434343;
+}
+.ban .wrapper .top li{
+    float: left;
+    height: 58px;
+    margin-right: 300px;
+}
+.ban .wrapper .top li:nth-child(3n){
+    margin-right: 0;
+}
+.ban .wrapper .top{
+    padding-top: 59px;
+    padding-left: 135px;
+}
+.ban .wrapper .top span{
+    margin-left: 10px;
+    color: aliceblue;
+    font-size: 28px;
+}
+
+.ban .wrapper .top .one::before{
+    display: inline-block;
+    content: "";
+    background-image: url(../images/sprites.png);
+    width: 57px;
+    height: 57px;
+    background-position: 0 0;
+    vertical-align: middle;
+} 
+.ban .wrapper .top .two::before{
+    display: inline-block;
+    content: "";
+    background-image: url(../images/sprites.png);
+    width: 57px;
+    height: 57px;
+    background-position: -65px 0;
+    vertical-align: middle;
+} 
+.ban .wrapper .top .three::before{
+    display: inline-block;
+    content: "";
+    background-image: url(../images/sprites.png);
+    width: 57px;
+    height: 57px;
+    background-position: -130px 0;
+    vertical-align: middle;
+} 
+/* 末尾的最下面一部分 */
+.ban .wrapper .buttom .more{
+    width: 537px;
+    height: 48px;
+    margin-top: 41px;
+    margin-left: 424px;
+}
+.ban .wrapper .buttom .more li{
+    float: left;
+    font-size: 14px;
+    margin-right: 11px;
+    padding-right: 11px;
+    border-right: solid 2px #999999;
+}
+.ban .wrapper .buttom .more li a{
+    color: #999999;
+}
+.ban .wrapper .buttom .more li:nth-child(7n){
+    margin-right: 0;
+    padding-right: 0;
+    border: 0;
+}
+.ban .wrapper .buttom .zi{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 195px;
+    font-size: 14px;
+    color: #999999;
+}
+
+
+
+
+
+
+
+/* app下载 */
+.app{
+    height: 300px;
+    /* background-color: green; */
+    margin-top: 40px;
+}
+/* 调整盒子位置 */
+.app .one,.app .two{
+    float: left;
+    width: 192px;
+    height: 143px;
+    /* background-color: pink; */
+    margin-top: 80px;
+}
+/* 第一个盒子 */
+.app .one{
+    margin-left: 60px;
+}
+/* 第二个盒子 */
+.app .two{
+    margin-left: 120px;
+}
+/* 盒子边框 */
+.app .one .right a,.app .one .left a,
+.app .two .right a,.app .two .left a{
+    border: 1px solid #999999;
+}
+/* 盒子内部文字 */
+.app .one h3,.app .two h3,.app .three h3,.app .four h3{
+    font-size: 16px;
+    color: #999999;
+    text-align: center;
+}
+/* 盒子内部两个图案 */
+.app .one .left a,.app .two .left a{
+    /* display: inline-block; */
+    float: left;
+    /* background-color: skyblue; */
+    width: 93px;
+    height: 92px;
+    margin-top: 27px;
+}
+.app .one .right a,.app .two .right a{
+    /* display: inline-block; */
+    float: left;
+    /* background-color: skyblue; */
+    width: 93px;
+    height: 92px;
+    margin-left: 6px;
+    margin-top: 27px;
+}
+/* 加入图标one */
+.app .one .left a span{
+    display: inline-block;
+    width: 29px;
+    height: 27px;
+    margin-top: 22px;
+    margin-left: 32px;
+    background-image: url(../images/sprites.png);
+    background-position: -250px -70px;
+}
+.app .one .right a span{
+    display: inline-block;
+    width: 29px;
+    height: 27px;
+    margin-top: 22px;
+    margin-left: 32px;
+    background-image: url(../images/sprites.png);
+    background-position: -350px -70px;
+}
+/* 加入图标 two */
+.app .two .left a span{
+    display: inline-block;
+    width: 36px;
+    height: 29px;
+    margin-top: 19px;
+    margin-left: 29px;
+    background-image: url(../images/sprites.png);
+    background-position: -250px -15px;
+}
+.app .two .right a span{
+    display: inline-block;
+    width: 36px;
+    height: 29px;
+    margin-top: 19px;
+    margin-left: 29px;
+    background-image: url(../images/sprites.png);
+    background-position: -350px -15px;
+}
+/* 图标内文字 */
+.app .one .left a p,.app .two .left a p{
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
+.app .one .right a p,.app .two .right a p{
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
+
+
+/* 第三个盒子 */
+
+/* 盒子位置调整 */
+.app .three {
+    float: left;
+    width: 241px;
+    height: 156px;
+    /* background-color: pink; */
+    margin-top: 79px;
+    margin-left: 93px;
+}
+
+/* 内容放置 */
+
+/* 二维码 */
+.app .three img{
+    float: left;
+    width: 116px;
+    height: 116px;
+    margin-top: 16px;
+}
+
+/* 文字排版 */
+.app .three .bd span{
+    float: left;
+    margin-left: 26px;
+    margin-top: 30px;
+    color: #999999;
+    font-size: 14px;
+}
+/* 下载按钮 */
+.app .three .bd a{
+    float: right;
+    /* display: inline-block; */
+    width: 103px;
+    height: 32px;
+    background-color: #27ba9b;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 14px;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+/* 第四个盒子 */
+.app .four{
+    float: right;
+    width: 311px;
+    height: 190px;
+    /* background-color: pink; */
+    margin-top: 80px;
+    border-left: 2px solid #f2f2f2;
+}
+/* 盒子内部调整 */
+.app .four .phone{
+    margin-top: 58px;
+    font-size: 22px;
+    color: #666666;
+    display: block;
+    text-align: center;
+}
+.app .four .time{
+    display: block;
+    font-size: 15px;
+    color: #999999;
+    margin-top: 17px;
+    text-align: center;
+}
+
+
+/* 鼠标悬停，变图案 */
+.app .one .left a span:hover{
+    background-position: -205px -70px;
+}
+.app .one .right a span:hover{
+    background-position: -300px -70px;
+}
+.app .two .left a span:hover{
+    background-position: -205px -15px;
+}
+.app .two .right a span:hover{
+    background-position: -300px -15px;
+}
